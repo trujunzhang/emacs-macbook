@@ -2,8 +2,8 @@
 (cask-initialize)
 
 ;; exec-path-from-shell
-;;(when (memq window-system '(mac ns))
-;;  (exec-path-from-shell-initialize))
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; Keeps ~Cask~ file in sync with the packages
 ;; that you install/uninstall via ~M-x list-packages~
