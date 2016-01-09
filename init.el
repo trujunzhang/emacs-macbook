@@ -2,10 +2,10 @@
 (cask-initialize)
 
 ;; exec-path-from-shell
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+;;(when (memq window-system '(mac ns))
+;;  (exec-path-from-shell-initialize))
 
-	;; Keeps ~Cask~ file in sync with the packages
+;; Keeps ~Cask~ file in sync with the packages
 ;; that you install/uninstall via ~M-x list-packages~
 ;; https://github.com/rdallasgray/pallet
 (require 'pallet)
@@ -32,13 +32,13 @@ by Prelude.")
 
 
 (defun prelude-add-subfolders-to-load-path (parent-dir)
- "Add all level PARENT-DIR subdirs to the `load-path'."
- (dolist (f (directory-files parent-dir))q
-   (let ((name (expand-file-name f parent-dir)))
-     (when (and (file-directory-p name)
-                (not (string-prefix-p "." f)))
-       (add-to-list 'load-path name)
-       (prelude-add-subfolders-to-load-path name)))))
+  "Add all level PARENT-DIR subdirs to the `load-path'."
+  (dolist (f (directory-files parent-dir))q
+	  (let ((name (expand-file-name f parent-dir)))
+	    (when (and (file-directory-p name)
+		       (not (string-prefix-p "." f)))
+	      (add-to-list 'load-path name)
+	      (prelude-add-subfolders-to-load-path name)))))
 
 ;; add Prelude's directories to Emacs's `load-path'
 (add-to-list 'load-path prelude-core-dir)
@@ -57,7 +57,8 @@ by Prelude.")
 ;;(require 'prelude-global-keybindings)
 
 (require 'prelude-helm-everywhere)
-
+(require 'prelude-customize)
+(require 'prelude-keyboard)
 
 
 ;; ==================================================
@@ -167,14 +168,6 @@ by Prelude.")
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; yasnippet
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-(yas-global-mode 1)
-
-;; autocomplete
-(ac-config-default)
-(ac-set-trigger-key "<tab>")
-(setq ac-auto-start nil)
 
 ;; multiple cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
@@ -208,12 +201,12 @@ by Prelude.")
                           (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "PHONE" "MEETING")
                           ))
 (setq org-todo-keyword-faces
-  '(("TODO" . org-warning)
-   ("NEXT" . "orange")
-   ("DONE" . "green")
-   ("TODAY" . "orange")
-   ("CANCELLED" . "gray")
-   ("WAITING" . "blue")))
+      '(("TODO" . org-warning)
+	("NEXT" . "orange")
+	("DONE" . "green")
+	("TODAY" . "orange")
+	("CANCELLED" . "gray")
+	("WAITING" . "blue")))
 
 (require 'org)
 (define-key org-mode-map (kbd "M-e") 'next-line)
@@ -221,7 +214,7 @@ by Prelude.")
 ;; custom agenda
 (setq org-agenda-compact-blocks t)
 
-; Set default column view headings: Task Effort Clock_Summary
+					; Set default column view headings: Task Effort Clock_Summary
 (setq org-columns-default-format "%80ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM")
 (setq org-global-properties (quote (("Effort_ALL" . "0:15 0:30 0:45 1:00 1:30 2:00 2:30 3:00 3:30 4:00")
                                     ("STYLE_ALL" . "habit"))))
@@ -248,31 +241,31 @@ by Prelude.")
               )))
 
 ;; refiling
-; Targets include this file and any file contributing to the agenda - up to 9 levels deep
+					; Targets include this file and any file contributing to the agenda - up to 9 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
                                  (org-agenda-files :maxlevel . 9))))
 
-; Use full outline paths for refile targets - we file directly with IDO
+					; Use full outline paths for refile targets - we file directly with IDO
 (setq org-refile-use-outline-path t)
 
-; Targets complete directly with IDO
+					; Targets complete directly with IDO
 (setq org-outline-path-complete-in-steps nil)
 
-; Allow refile to create parent tasks with confirmation
+					; Allow refile to create parent tasks with confirmation
 (setq org-refile-allow-creating-parent-nodes (quote confirm))
 
-; Use IDO for both buffer and file completion and ido-everywhere to t
+					; Use IDO for both buffer and file completion and ido-everywhere to t
 (setq org-completion-use-ido t)
 (setq ido-max-directory-size 100000)
 (ido-mode (quote both))
-; Use the current window when visiting files and buffers with ido
+					; Use the current window when visiting files and buffers with ido
 (setq ido-default-file-method 'selected-window)
 (setq ido-default-buffer-method 'selected-window)
-; Use the current window for indirect buffer display
+					; Use the current window for indirect buffer display
 (setq org-indirect-buffer-display 'current-window)
 
 ;;;; Refile settings
-; Exclude DONE state tasks from refile targets
+					; Exclude DONE state tasks from refile targets
 (defun bh/verify-refile-target ()
   "Exclude todo keywords with a done state from refile targets"
   (not (member (nth 2 (org-heading-components)) org-done-keywords)))

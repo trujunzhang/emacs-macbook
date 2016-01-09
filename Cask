@@ -1,8 +1,8 @@
 (source gnu)
 (source melpa)
 
-(depends-on "bind-key")
 (depends-on "cask")
+(depends-on "bind-key")
 (depends-on "dash")
 (depends-on "drag-stuff")
 (depends-on "exec-path-from-shell")
@@ -56,3 +56,7 @@
 (depends-on "rvm")
 
 (depends-on "super-save")
+(depends-on "ace-jump-mode")
+(depends-on "paredit")
+
+
