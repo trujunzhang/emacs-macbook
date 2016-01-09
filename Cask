@@ -54,3 +54,5 @@
 (depends-on "markdown-mode")
 (depends-on "autopair")
 (depends-on "rvm")
+
+(depends-on "super-save")
