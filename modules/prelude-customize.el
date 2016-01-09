@@ -1,3 +1,7 @@
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+
 (require 'auto-complete-config)
 (ac-config-default)
 
@@ -41,8 +45,8 @@
 
 (setq yas-snippet-dirs
       '("~/.emacs.d/snippets"                 ;; personal snippets
-        ;"/Users/djzhang/.emacs.d/.cask/24.5.1/elpa/yasnippet-20160104.129/snippets"                    ;; foo-mode and bar-mode snippet collection
-         Yasnippet_snippets
+					;"/Users/djzhang/.emacs.d/.cask/24.5.1/elpa/yasnippet-20160104.129/snippets"                    ;; foo-mode and bar-mode snippet collection
+	Yasnippet_snippets
         ;;"/path/to/yasnippet/yasmate/snippets" ;; the yasmate collection
         ;;"/path/to/yasnippet/snippets"         ;; the default collection
         ))
@@ -59,6 +63,9 @@
 ;;(setq default-frame-alist
 ;;      '((height . 35) (width . 100) (menu-bar-line . 20)(tool-bar-lines . 0)))
 
+(require 'swift-mode)
+;;(add-to-list 'flycheck-checker 'swift)
+(add-to-list 'auto-mode-alist '("\\.swift$" . swift-mode))
 
 
 (provide 'prelude-customize)

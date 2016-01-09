@@ -30,6 +30,7 @@
 (depends-on "exec-path-from-shell")
 (depends-on "helm")
 ;;(depends-on "helm-eshell")
+(depends-on "ido")
 (depends-on "flx-ido")
 (depends-on "projectile")
 (depends-on "projectile-rails")
