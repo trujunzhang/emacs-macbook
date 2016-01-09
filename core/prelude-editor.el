@@ -89,10 +89,10 @@
 
 (show-smartparens-global-mode +1)
 
-(define-key prog-mode-map (kbd "M-(") (prelude-wrap-with "("))
+;;(define-key prog-mode-map (kbd "M-(") (prelude-wrap-with "("))
 ;; FIXME: pick terminal friendly binding
 ;; (define-key prog-mode-map (kbd "M-[") (prelude-wrap-with "["))
-(define-key prog-mode-map (kbd "M-\"") (prelude-wrap-with "\""))
+;;(define-key prog-mode-map (kbd "M-\"") (prelude-wrap-with "\""))
 
 ;; disable annoying blink-matching-paren
 (setq blink-matching-paren nil)
@@ -108,39 +108,39 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ;; saveplace remembers your location in a file when saving files
-(require 'saveplace)
-(setq save-place-file (expand-file-name "saveplace" prelude-savefile-dir))
+;;(require 'saveplace)
+;;(setq save-place-file (expand-file-name "saveplace" prelude-savefile-dir))
 ;; activate it for all buffers
-(setq-default save-place t)
+;;(setq-default save-place t)
 
 ;; savehist keeps track of some history
-(require 'savehist)
-(setq savehist-additional-variables
-      ;; search entries
-      '(search-ring regexp-search-ring)
-      ;; save every minute
-      savehist-autosave-interval 60
-      ;; keep the home clean
-      savehist-file (expand-file-name "savehist" prelude-savefile-dir))
-(savehist-mode +1)
+;;(require 'savehist)
+;;(setq savehist-additional-variables
+;;      ;; search entries
+;;      '(search-ring regexp-search-ring)
+;;      ;; save every minute
+;;      savehist-autosave-interval 60
+;;      ;; keep the home clean
+;;      savehist-file (expand-file-name "savehist" prelude-savefile-dir))
+;;(savehist-mode +1)
 
 ;; save recent files
-(require 'recentf)
-(setq recentf-save-file (expand-file-name "recentf" prelude-savefile-dir)
-      recentf-max-saved-items 500
-      recentf-max-menu-items 15
-      ;; disable recentf-cleanup on Emacs start, because it can cause
-      ;; problems with remote files
-      recentf-auto-cleanup 'never)
+;;(require 'recentf)
+;;(setq recentf-save-file (expand-file-name "recentf" prelude-savefile-dir)
+;;      recentf-max-saved-items 500
+;;      recentf-max-menu-items 15
+;;      ;; disable recentf-cleanup on Emacs start, because it can cause
+;;      ;; problems with remote files
+;;      recentf-auto-cleanup 'never)
 
-(defun prelude-recentf-exclude-p (file)
-  "A predicate to decide whether to exclude FILE from recentf."
-  (let ((file-dir (file-truename (file-name-directory file))))
-    (-any-p (lambda (dir)
-              (string-prefix-p dir file-dir))
-            (mapcar 'file-truename (list prelude-savefile-dir package-user-dir)))))
+;;(defun prelude-recentf-exclude-p (file)
+;;  "A predicate to decide whether to exclude FILE from recentf."
+;;  (let ((file-dir (file-truename (file-name-directory file))))
+;;    (-any-p (lambda (dir)
+;;              (string-prefix-p dir file-dir))
+;;            (mapcar 'file-truename (list prelude-savefile-dir package-user-dir)))))
 
-(add-to-list 'recentf-exclude 'prelude-recentf-exclude-p)
+;;(add-to-list 'recentf-exclude 'prelude-recentf-exclude-p)
 
 (recentf-mode +1)
 
@@ -249,9 +249,9 @@ The body of the advice is in BODY."
 (require 'expand-region)
 
 ;; bookmarks
-(require 'bookmark)
-(setq bookmark-default-file (expand-file-name "bookmarks" prelude-savefile-dir)
-      bookmark-save-flag 1)
+;;(require 'bookmark)
+;;(setq bookmark-default-file (expand-file-name "bookmarks" prelude-savefile-dir)
+;;      bookmark-save-flag 1)
 
 ;; projectile is a project management mode
 (require 'projectile)

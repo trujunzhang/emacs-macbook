@@ -47,3 +47,10 @@
 (depends-on "zenburn-theme")
 (depends-on "peacock-theme")
 (depends-on "color-theme-sanityinc-tomorrow")
+
+
+(depends-on "autopair")
+(depends-on "graphviz-dot-mode")
+(depends-on "markdown-mode")
+(depends-on "autopair")
+(depends-on "rvm")

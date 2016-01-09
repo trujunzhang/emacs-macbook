@@ -85,3 +85,6 @@ var/
 ac-comphist.dat
 bookmarks
 saveplace.el
+ido.last
+projectile-bookmarks.eld
+recentf
