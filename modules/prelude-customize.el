@@ -65,9 +65,9 @@
 ;;(setq default-frame-alist
 ;;      '((height . 35) (width . 100) (menu-bar-line . 20)(tool-bar-lines . 0)))
 
-(require 'swift-mode)
+;;(require 'swift-mode)
 ;;(add-to-list 'flycheck-checker 'swift)
-(add-to-list 'auto-mode-alist '("\\.swift$" . swift-mode))
+;;(add-to-list 'auto-mode-alist '("\\.swift$" . swift-mode))
 
 
 (set-face-attribute 'helm-selection nil 

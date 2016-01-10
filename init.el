@@ -59,6 +59,7 @@ by Prelude.")
 (require 'prelude-helm-everywhere)
 (require 'prelude-customize)
 (require 'prelude-keyboard)
+(require 'prelude-ido)
 
 
 ;; ==================================================

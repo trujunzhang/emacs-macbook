@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Cask"
+(("images"
+ (filename . "~/Desktop/upwork-projects/projects/IEATTA-APPLE-IOS/JUnit/ManualDatabase/images/")
+ (front-context-string . "Clarence Morgan.")
+ (rear-context-string . "26 Jan  2 18:24 ")
+ (position . 310))
+("Cask"
  (filename . "~/.emacs.d/Cask")
  (front-context-string . "(source gnu)\n(so")
  (rear-context-string)
