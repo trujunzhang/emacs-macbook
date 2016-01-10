@@ -2,7 +2,42 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("images"
+((".zshrc"
+ (filename . "~/.zshrc")
+ (front-context-string . "# Path to your o")
+ (rear-context-string)
+ (position . 1))
+("IEATTA-APPLE-ANDROID"
+ (filename . "~/Desktop/upwork-projects/IEATTA-Android/IEATTA-APPLE-ANDROID/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "76 Jan 10 17:18 ")
+ (position . 284))
+("projectile-speedbar.el"
+ (filename . "~/.emacs.d/personal/projectile-speedbar.el")
+ (front-context-string . "\n(provide 'proje")
+ (rear-context-string . "buffer-in-tree)\n")
+ (position . 4744))
+("prelude-speedbar.el"
+ (filename . "~/.emacs.d/modules/prelude-speedbar.el")
+ (front-context-string . "(require 'projec")
+ (rear-context-string . "sion \".js\")\n\n\n;;")
+ (position . 238))
+("Restaurant.swift"
+ (filename . "~/Desktop/upwork-projects/projects/IEATTA-APPLE-IOS/IEATTA/IEATTA/Shared/Parse_layout/Models/Restaurant.swift")
+ (front-context-string . "delSync{\n    // ")
+ (rear-context-string . "aurant : ParseMo")
+ (position . 357))
+("swift-mode-20151017.2320"
+ (filename . "~/.emacs.d/.cask/24.5.1/elpa/swift-mode-20151017.2320/")
+ (front-context-string . "swift-mode-autol")
+ (rear-context-string . "49 Jan  9 17:20 ")
+ (position . 280))
+("emacs-lisp"
+ (filename . "~/Desktop/github/trujunzhang/emacs-lisp/")
+ (front-context-string)
+ (rear-context-string . "66 Jan  7 18:43 ")
+ (position . 258))
+("images"
  (filename . "~/Desktop/upwork-projects/projects/IEATTA-APPLE-IOS/JUnit/ManualDatabase/images/")
  (front-context-string . "Clarence Morgan.")
  (rear-context-string . "26 Jan  2 18:24 ")

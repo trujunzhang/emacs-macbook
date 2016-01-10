@@ -43,7 +43,8 @@ by Prelude.")
 ;; add Prelude's directories to Emacs's `load-path'
 (add-to-list 'load-path prelude-core-dir)
 (add-to-list 'load-path prelude-modules-dir)
-;;(add-to-list 'load-path prelude-vendor-dir)
+;; (add-to-list 'load-path Prelude-personal-dir)
+(add-to-list 'load-path prelude-personal-dir)
 ;;1q(prelude-add-subfolders-to-load-path prelude-vendor-dir)
 
 
@@ -790,6 +791,7 @@ DELTA should be a multiple of 10, in the units used by the
  '(custom-safe-themes
    (quote
     ("26ce7eea701bfd143ac536e6805224cff5598b75effb60f047878fe9c4833ae4" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "b06aaf5cefc4043ba018ca497a9414141341cb5a2152db84a9a80020d35644d1" default)))
+ '(ecb-options-version "2.40")
  '(highlight-changes-colors ("#FD5FF0" "#AE81FF"))
  '(highlight-tail-colors
    (quote
@@ -802,6 +804,9 @@ DELTA should be a multiple of 10, in the units used by the
      ("#A41F99" . 85)
      ("#49483E" . 100))))
  '(magit-diff-use-overlays nil)
+ '(nrepl-message-colors
+   (quote
+    ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(org-agenda-files
    (quote
     ("~/Dropbox/org/refile.org" "~/Dropbox/org/todo.org")))

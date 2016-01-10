@@ -19,6 +19,8 @@
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
+(depends-on "sr-speedbar")
+
 (depends-on "s")
 (depends-on "smartparens")
 (depends-on "smex")
@@ -59,5 +61,9 @@
 (depends-on "super-save")
 (depends-on "ace-jump-mode")
 (depends-on "paredit")
+
+
+;; language
+(depends-on "ecb")
 
 
