@@ -87,3 +87,6 @@ saveplace.el
 ido.last
 projectile-bookmarks.eld
 recentf
+
+
+init.el.before_ecb*

@@ -65,5 +65,7 @@
 
 ;; language
 (depends-on "ecb")
+(depends-on "jdee")
+
 
 
