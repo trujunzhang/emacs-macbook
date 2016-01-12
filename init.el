@@ -61,6 +61,8 @@ by Prelude.")
 (require 'prelude-customize)
 (require 'prelude-keyboard)
 (require 'prelude-ido)
+(require 'prelude-speedbar)
+(require 'prelude-complete)
 
 
 ;; ==================================================

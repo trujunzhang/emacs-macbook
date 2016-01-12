@@ -66,6 +66,5 @@
 ;; language
 (depends-on "ecb")
 (depends-on "jdee")
-
-
+(depends-on "lua-mode")
 

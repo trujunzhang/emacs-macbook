@@ -84,6 +84,11 @@
 (global-set-key (kbd "C-;") 'tmtxt/ecb-show-ecb-windows)
 (global-set-key (kbd "C-'") 'tmtxt/ecb-hide-ecb-windows)
 
+;; Lua-mode
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
 
 (provide 'prelude-language)
 ;; prelude-language.el ends here.

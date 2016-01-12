@@ -37,29 +37,6 @@
 ;;  (super-save-initialize)
 
 
-;; yasnippet
-(setq Version_Cask "24.5.1")
-(setq Version_Yasnippet "20160104.129")
-
-
-;; For example: 
-(setq Yasnippet_snippets (concat "~/.emacs.d/.cask/" Version_Cask "/elpa/yasnippet-"  Version_Yasnippet  "/snippets"))
-
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"                 ;; personal snippets
-                                        ;"/Users/djzhang/.emacs.d/.cask/24.5.1/elpa/yasnippet-20160104.129/snippets"                    ;; foo-mode and bar-mode snippet collection
-        Yasnippet_snippets
-        ;;"/path/to/yasnippet/yasmate/snippets" ;; the yasmate collection
-        ;;"/path/to/yasnippet/snippets"         ;; the default collection
-        ))
-;;(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-(yas-global-mode 1)
-
-;; autocomplete
-(ac-config-default)
-;;(ac-set-trigger-key "<tab>")
-;;(setq ac-auto-start nil)
-;;(setq ac-auto-start nil)
 
 
 ;;(setq default-frame-alist

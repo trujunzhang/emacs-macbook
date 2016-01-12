@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-((".zshrc"
+(("pages-gem"
+ (filename . "~/Desktop/github/railsApps/pages-gem/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "42 Jan 11 17:31 ")
+ (position . 259))
+(".zshrc"
  (filename . "~/.zshrc")
  (front-context-string . "# Path to your o")
  (rear-context-string)
