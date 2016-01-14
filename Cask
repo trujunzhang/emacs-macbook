@@ -74,3 +74,7 @@
 (depends-on "tern")
 (depends-on "tern-auto-complete")
 (depends-on "scss-mode")
+
+
+
+(depends-on "matlab-mode")

@@ -64,6 +64,7 @@ by Prelude.")
 (require 'prelude-web)
 (require 'prelude-speedbar)
 (require 'prelude-complete)
+(require 'prelude-math)
 
 
 ;; ==================================================

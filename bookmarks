@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("snippets"
+(("examples"
+ (filename . "/Applications/MATLAB_R2015b.app/examples/")
+ (front-context-string . "antenna\n  drwxr-")
+ (rear-context-string . "34 Jan 14 20:52 ")
+ (position . 258))
+("snippets"
  (filename . "~/.emacs.d/snippets/")
  (front-context-string . ".DS_Store\n  drwx")
  (rear-context-string . "48 Jan 14 20:10 ")
