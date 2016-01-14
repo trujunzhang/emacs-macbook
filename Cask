@@ -60,6 +60,7 @@
 (depends-on "ace-jump-mode")
 (depends-on "paredit")
 
+(depends-on "focus-autosave-mode")
 
 ;; language
 (depends-on "ecb")
