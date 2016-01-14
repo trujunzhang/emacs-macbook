@@ -2,7 +2,32 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("pages-gem"
+(("gulp-bower-bootstrap-fontawesome"
+ (filename . "/Applications/MAMP/htdocs/gulp-bower-bootstrap-fontawesome/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "76 Jan 13 16:06 ")
+ (position . 271))
+("plugins"
+ (filename . "~/.oh-my-zsh/plugins/")
+ (front-context-string . "adb\n  drwxr-xr-x")
+ (rear-context-string . "36 Jan  9 06:47 ")
+ (position . 245))
+("htdocs"
+ (filename . "/Applications/MAMP/htdocs/")
+ (front-context-string . "MuseExport\n  -rw")
+ (rear-context-string . "12 Jan 12 18:27 ")
+ (position . 439))
+("heroku-blog"
+ (filename . "~/Desktop/github/railsApps/heroku-blog/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "48 Jan 12 17:37 ")
+ (position . 265))
+("ruby2-rails4-bootstrap-heroku"
+ (filename . "~/Desktop/github/railsApps/ruby2-rails4-bootstrap-heroku/")
+ (front-context-string . ".DS_Store\n  -rw-")
+ (rear-context-string . "48 Jan 12 12:05 ")
+ (position . 280))
+("pages-gem"
  (filename . "~/Desktop/github/railsApps/pages-gem/")
  (front-context-string . ".git\n  -rw-r--r-")
  (rear-context-string . "42 Jan 11 17:31 ")

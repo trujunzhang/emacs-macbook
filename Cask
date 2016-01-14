@@ -43,7 +43,6 @@
 (depends-on "auto-complete")
 (depends-on "multiple-cursors")
 (depends-on "emmet-mode")
-(depends-on "js2-mode")
 (depends-on "neotree")
 
 ;; themes
@@ -68,3 +67,10 @@
 (depends-on "jdee")
 (depends-on "lua-mode")
 
+;; web-develop
+(depends-on "simple-httpd")
+(depends-on "js2-mode")
+(depends-on "skewer-mode")
+(depends-on "tern")
+(depends-on "tern-auto-complete")
+(depends-on "scss-mode")
