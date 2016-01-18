@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("examples"
+(("Understanding CSS Animations"
+ (filename . "/Applications/MAMP/htdocs/Understanding CSS Animations/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "40 Jan 18 10:54 ")
+ (position . 260))
+("examples"
  (filename . "/Applications/MATLAB_R2015b.app/examples/")
  (front-context-string . "antenna\n  drwxr-")
  (rear-context-string . "34 Jan 14 20:52 ")

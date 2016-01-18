@@ -24,6 +24,11 @@
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
+;; jade-mode(stylus)
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
+
 
 (provide 'prelude-web)
 ;; prelude-web.el ends here.

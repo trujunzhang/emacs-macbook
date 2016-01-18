@@ -74,6 +74,8 @@
 (depends-on "tern")
 (depends-on "tern-auto-complete")
 (depends-on "scss-mode")
+(depends-on "jade-mode")
+(depends-on "sws-mode")
 
 
 
