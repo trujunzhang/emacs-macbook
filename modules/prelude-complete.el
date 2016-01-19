@@ -1,3 +1,6 @@
+(require 'auto-complete)
+(require 'yasnippet)
+
 ;; yasnippet
 (setq Version_Cask "24.5.1")
 (setq Version_Yasnippet "20160104.129")
@@ -15,13 +18,6 @@
         ))
 ;;(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
-
-;; autocomplete
-;;(ac-config-default)
-;;(ac-set-trigger-key "<tab>")
-;;(setq ac-auto-start nil)
-;;(setq ac-auto-start nil)
-
 
 ;;; auto complete mod
 ;;; should be loaded after yasnippet so that they can work together
