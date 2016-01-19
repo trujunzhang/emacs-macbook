@@ -1,5 +1,5 @@
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
 (require 'ido)
 (ido-mode t)
@@ -36,16 +36,12 @@
 ;; You can think of it as both something that augments and replaces the standard auto-save-mode.
 ;;  (super-save-initialize)
 
-
-
-
 ;;(setq default-frame-alist
 ;;      '((height . 35) (width . 100) (menu-bar-line . 20)(tool-bar-lines . 0)))
 
 ;;(require 'swift-mode-autoloads)
 (require 'swift-mode)
 ;;(add-to-list 'flycheck-checker 'swift)
-
 
 (set-face-attribute 'helm-selection nil 
                     :background "orange"

@@ -13,7 +13,6 @@
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
 (depends-on "magit")
-(depends-on "multiple-cursors")
 (depends-on "nyan-mode")
 (depends-on "pallet")
 (depends-on "popwin")
@@ -79,3 +78,4 @@
 
 (depends-on "ssh")
 (depends-on "matlab-mode")
+(depends-on "multi-term")
