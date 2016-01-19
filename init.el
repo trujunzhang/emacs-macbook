@@ -62,6 +62,7 @@ by Prelude.")
 (require 'prelude-complete)
 (require 'prelude-math)
 (require 'prelude-c)
+(require 'prelude-mac)
 
 
 ;; ==================================================
