@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Understanding CSS Animations"
+(("strongswan-5.3.5"
+ (filename . "~/Desktop/github/android/strongswan-5.3.5/")
+ (front-context-string . "AUTHORS\n  -rw-r-")
+ (rear-context-string . " 0 Oct 18  2013 ")
+ (position . 272))
+("gccTutorials"
+ (filename . "~/Desktop/github/emacsProjects/gccTutorials/")
+ (front-context-string)
+ (rear-context-string . " Jan 19 10:43 ..")
+ (position . 209))
+("Understanding CSS Animations"
  (filename . "/Applications/MAMP/htdocs/Understanding CSS Animations/")
  (front-context-string . ".git\n  -rw-r--r-")
  (rear-context-string . "40 Jan 18 10:54 ")
@@ -88,7 +98,7 @@
  (rear-context-string . "49 Jan  9 17:20 ")
  (position . 280))
 ("emacs-lisp"
- (filename . "~/Desktop/github/trujunzhang/emacs-lisp/")
+ (filename . "~/Desktop/github/emacsProjects/emacs-lisp")
  (front-context-string)
  (rear-context-string . "66 Jan  7 18:43 ")
  (position . 258))

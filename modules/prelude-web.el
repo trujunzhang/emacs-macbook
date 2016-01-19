@@ -27,7 +27,15 @@
 ;; jade-mode(stylus)
 (require 'sws-mode)
 (require 'jade-mode)
-(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . jade-mode))
+
+;; emmet-mode
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+(add-hook 'sws-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
+
 
 
 (provide 'prelude-web)

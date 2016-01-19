@@ -65,6 +65,7 @@ by Prelude.")
 (require 'prelude-speedbar)
 (require 'prelude-complete)
 (require 'prelude-math)
+(require 'prelude-c)
 
 
 ;; ==================================================
