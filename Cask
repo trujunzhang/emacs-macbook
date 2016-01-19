@@ -75,7 +75,5 @@
 (depends-on "jade-mode")
 (depends-on "sws-mode")
 
-
 (depends-on "ssh")
 (depends-on "matlab-mode")
-(depends-on "multi-term")

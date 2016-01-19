@@ -34,7 +34,7 @@
 (ac-set-trigger-key "TAB")
 (ac-set-trigger-key "<tab>")
 
-
+(add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
 
 (provide 'prelude-complete)
 ;; prelude-complete.el ends here.

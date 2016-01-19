@@ -1,17 +1,4 @@
 
-;; (add-hook 'after-init-hook #'global-flycheck-mode)
-
-(require 'ido)
-(ido-mode t)
-
-(require 'auto-complete-config)
-(ac-config-default)
-
-
-(add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
-
-(require 'rvm)
-(rvm-use-default)
 
 (require 'autopair)
 
