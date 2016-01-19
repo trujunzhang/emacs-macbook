@@ -1,10 +1,6 @@
 (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
 (cask-initialize)
 
-;; exec-path-from-shell
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
 ;; Keeps ~Cask~ file in sync with the packages
 ;; that you install/uninstall via ~M-x list-packages~
 ;; https://github.com/rdallasgray/pallet

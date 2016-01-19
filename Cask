@@ -29,7 +29,6 @@
 (depends-on "yasnippet")
 
 ;; djzhang
-(depends-on "exec-path-from-shell")
 (depends-on "helm")
 ;;(depends-on "helm-eshell")
 (depends-on "ido")
@@ -78,5 +77,5 @@
 (depends-on "sws-mode")
 
 
-
+(depends-on "ssh")
 (depends-on "matlab-mode")
