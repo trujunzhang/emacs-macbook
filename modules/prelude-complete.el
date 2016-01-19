@@ -34,6 +34,11 @@
 (ac-set-trigger-key "TAB")
 (ac-set-trigger-key "<tab>")
 
+
+;; shell-script-mode
+
+;; Use shell-script-mode for .zsh files.
+
 (add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
 
 (provide 'prelude-complete)
