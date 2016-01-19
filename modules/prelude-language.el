@@ -92,5 +92,9 @@
 ;; (require 'swift-mode)
 ;;(add-to-list 'flycheck-checker 'swift)
 
+;; plantuml
+(require 'plantuml-mode)
+(setq org-plantuml-jar-path "~/.emacs.d/vendor/plantuml.jar")
+
 (provide 'prelude-language)
 ;; prelude-language.el ends here.

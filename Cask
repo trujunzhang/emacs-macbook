@@ -64,6 +64,7 @@
 (depends-on "ecb")
 (depends-on "jdee")
 (depends-on "lua-mode")
+(depends-on "plantuml-mode")
 
 ;; web-develop
 (depends-on "simple-httpd")
