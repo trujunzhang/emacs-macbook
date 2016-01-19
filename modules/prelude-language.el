@@ -50,8 +50,6 @@
 (global-set-key (kbd "C-#") 'ecb-goto-window-methods)
 (global-set-key (kbd "C-$") 'ecb-goto-window-compilation)
 
-
-
 ;; Some of My Functions
 ;; Personally, I don’t like those function ecb-deactivate, ecb-show-ecb-windows, ecb-hide-ecb-windows since I usually have to open multiple windows in Emacs. When deactivate or hide ECB window, it does not automatically restore the window layout and switch to the buffer that I’m editing. Similar problem happens when I try to show ecb window again. Because of that, I wrote those functions to replace the ECB built in three functions ecb-deactivate, ecb-show-ecb-windows, ecb-hide-ecb-windows.
 
@@ -89,6 +87,10 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
+;; swift-mode
+;;(require 'swift-mode-autoloads)
+;; (require 'swift-mode)
+;;(add-to-list 'flycheck-checker 'swift)
 
 (provide 'prelude-language)
 ;; prelude-language.el ends here.

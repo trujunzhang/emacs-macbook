@@ -1,5 +1,5 @@
 
-
+;; auto pare
 (require 'autopair)
 
 (defvar autopair-modes '(r-mode ruby-mode))
@@ -17,9 +17,6 @@
 
 (ad-activate 'paredit-mode)
 
-;;(require 'swift-mode-autoloads)
-;; (require 'swift-mode)
-;;(add-to-list 'flycheck-checker 'swift)
 
 
 
