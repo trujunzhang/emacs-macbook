@@ -20,6 +20,9 @@
 
 (projectile-global-mode)
 
+(set-face-attribute 'helm-selection nil
+                    :background "orange"
+                    :foreground "black")
 
 (provide 'prelude-project)
 ;; prelude-project.el ends here.

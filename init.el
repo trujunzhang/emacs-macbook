@@ -54,6 +54,7 @@ by Prelude.")
 ;;(require 'prelude-global-keybindings)
 
 (require 'prelude-helm-everywhere)
+(require 'prelude-project)
 (require 'prelude-customize)
 (require 'prelude-keyboard)
 (require 'prelude-ido)
