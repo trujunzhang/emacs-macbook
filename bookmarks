@@ -73,7 +73,7 @@
  (rear-context-string)
  (position . 1))
 ("IEATTA-APPLE-ANDROID"
- (filename . "~/Desktop/upwork-projects/IEATTA-Android/IEATTA-APPLE-ANDROID/")
+ (filename . "~/Desktop/upwork-projects/IEATTA")
  (front-context-string . ".git\n  -rw-r--r-")
  (rear-context-string . "76 Jan 10 17:18 ")
  (position . 284))

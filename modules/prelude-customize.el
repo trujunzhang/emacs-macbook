@@ -30,9 +30,10 @@
 
 ;; Emacs starts up with way too much enabled. Turn off the scroll bar, menu bar, and tool bar. There isn't really a reason to have them on.
 
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
+(when (window-system)
+   (scroll-bar-mode -1)
+   (tool-bar-mode -1)
+   (menu-bar-mode -1)
 
 ;; Marking text
 
@@ -83,7 +84,7 @@
 ;; Load solarized-light if in a graphical environment. Load the wombat theme if in a terminal.
 
 (if window-system
-    (load-theme 'solarized-light t)
+    (load-theme 'zenburn t)
   (load-theme 'wombat t))
 
 ;; Color Codes
