@@ -78,6 +78,25 @@
       visible-bell t)
 (show-paren-mode t)
 
+;; Themes
+
+;; Load solarized-light if in a graphical environment. Load the wombat theme if in a terminal.
+
+(if window-system
+    (load-theme 'solarized-light t)
+  (load-theme 'wombat t))
+
+;; Color Codes
+
+;; Running things like RSpec in compilation mode produces ansi color codes that aren't properly dealt with by default. This takes care of that and makes sure that the colors that are trying to be presented are rendered correctly.
+
+(require 'ansi-color)
+(defun colorize-compilation-buffer ()
+  (toggle-read-only)
+  (ansi-color-apply-on-region (point-min) (point-max))
+  (toggle-read-only))
+(add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
 
 (require 'cask)
 ;;cask-elpa-path
