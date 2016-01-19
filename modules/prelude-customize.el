@@ -69,18 +69,6 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 
-;; Key bindings
-
-;; Miscellaneous key binding stuff that doesn't fit anywhere else.
-
-(global-set-key (kbd "RET") 'newline-and-indent)
-(global-set-key (kbd "C-;") 'comment-or-uncomment-region)
-(global-set-key (kbd "M-/") 'hippie-expand)
-(global-set-key (kbd "C-+") 'text-scale-increase)
-(global-set-key (kbd "C--") 'text-scale-decrease)
-(global-set-key (kbd "C-c C-k") 'compile)
-(global-set-key (kbd "C-x g") 'magit-status)
-
 ;; Misc
 
 ;; Turn down the time to echo keystrokes so I don't have to wait around for things to happen. Dialog boxes are also a bit annoying, so just have Emacs use the echo area for everything. Beeping is for robots, and I am not a robot. Use a visual indicator instead of making horrible noises. Oh, and always highlight parentheses. A person could go insane without that.
@@ -89,6 +77,10 @@
       use-dialog-box nil
       visible-bell t)
 (show-paren-mode t)
+
+
+(require 'cask)
+;;cask-elpa-path
 
 (provide 'prelude-customize)
 ;; prelude-customize.el ends here.
