@@ -65,4 +65,5 @@ by Prelude.")
 (require 'prelude-math)
 (require 'prelude-c)
 (require 'prelude-mac)
+(require 'prelude-org)
 

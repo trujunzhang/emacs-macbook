@@ -26,14 +26,32 @@
       initial-scratch-message nil
       initial-major-mode 'org-mode)
 
-;; Scroll bar, Tool bar, Menu bar
+;; ==================================================
+;;                 Basic Settings
+;; ==================================================
 
-;; Emacs starts up with way too much enabled. Turn off the scroll bar, menu bar, and tool bar. There isn't really a reason to have them on.
-
+(push "/usr/local/bin" exec-path)
+(global-visual-line-mode t)
+(delete-selection-mode t)
+(blink-cursor-mode t)
+(show-paren-mode t)
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq auto-save-default nil)
+(setq inhibit-startup-message t)
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
+(fset 'yes-or-no-p 'y-or-n-p)
+(electric-indent-mode t)
+(setq redisplay-dont-pause t
+      scroll-margin 1
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
 (when (window-system)
-   (scroll-bar-mode -1)
-   (tool-bar-mode -1)
-   (menu-bar-mode -1)
+  (tooltip-mode -1)
+  (set-fringe-style -1)
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1))
 
 ;; Marking text
 
