@@ -53,6 +53,10 @@ by Prelude.")
 ;;(require 'prelude-editor)
 ;;(require 'prelude-global-keybindings)
 
+;; Personal
+(require 'exec-path-from-shell)
+
+;; Modules
 (require 'prelude-helm-everywhere)
 (require 'prelude-project)
 (require 'prelude-complete)
