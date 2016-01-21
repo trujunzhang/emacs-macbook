@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("strongswan-5.3.5"
+(("Write Clean CSS using SASS"
+ (filename . "/Applications/MAMP/htdocs/Write Clean CSS using SASS/")
+ (front-context-string)
+ (rear-context-string . "Jan 20 15:32 ..\n")
+ (position . 208))
+("strongswan-5.3.5"
  (filename . "~/Desktop/github/android/strongswan-5.3.5/")
  (front-context-string . "AUTHORS\n  -rw-r-")
  (rear-context-string . " 0 Oct 18  2013 ")
