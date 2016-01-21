@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Responsive CSS with Sass and Compass"
+(("prelude-lisp.el"
+ (filename . "~/.emacs.d/modules/prelude-lisp.el")
+ (front-context-string . "\n(require 'init-")
+ (rear-context-string)
+ (position . 1))
+("Responsive CSS with Sass and Compass"
  (filename . "/Applications/MAMP/htdocs/Responsive CSS with Sass and Compass/")
  (front-context-string)
  (rear-context-string . "Jan 21 08:18 ..\n")

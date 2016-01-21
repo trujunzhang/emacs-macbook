@@ -7,6 +7,41 @@
 (require 'pallet)
 
 
+;; -*- coding: utf-8 -*-
+(setq emacs-load-start-time (current-time))
+
+;;----------------------------------------------------------------------------
+;; Which functionality to enable (use t or nil for true and false)
+;;----------------------------------------------------------------------------
+(setq *macbook-pro-support-enabled* t)
+(setq *is-a-mac* (eq system-type 'darwin))
+(setq *is-carbon-emacs* (and *is-a-mac* (eq window-system 'mac)))
+(setq *is-cocoa-emacs* (and *is-a-mac* (eq window-system 'ns)))
+(setq *win32* (eq system-type 'windows-nt) )
+(setq *cygwin* (eq system-type 'cygwin) )
+(setq *linux* (or (eq system-type 'gnu/linux) (eq system-type 'linux)) )
+(setq *unix* (or *linux* (eq system-type 'usg-unix-v) (eq system-type 'berkeley-unix)) )
+(setq *linux-x* (and window-system *linux*) )
+(setq *xemacs* (featurep 'xemacs) )
+(setq *emacs24* (and (not *xemacs*) (or (>= emacs-major-version 24))) )
+(setq *no-memory* (cond
+                   (*is-a-mac*
+                    (< (string-to-number (nth 1 (split-string (shell-command-to-string "sysctl hw.physmem")))) 4000000000))
+                   (*linux* nil)
+                   (t nil)))
+
+;;----------------------------------------------------------------------------
+;; Less GC, more memory
+;;----------------------------------------------------------------------------
+;; By default Emacs will initiate GC every 0.76 MB allocated
+;; (gc-cons-threshold == 800000).
+;; we increase this to 512MB
+;; @see http://www.gnu.org/software/emacs/manual/html_node/elisp/Garbage-Collection.html
+(setq-default gc-cons-threshold (* 1024 1024 512)
+              gc-cons-percentage 0.5)
+
+
+
 ;; ==================================================
 ;;                 Prelude settings
 ;; ==================================================
@@ -43,6 +78,7 @@ by Prelude.")
 (add-to-list 'load-path prelude-modules-dir)
 ;; (add-to-list 'load-path Prelude-personal-dir)
 (add-to-list 'load-path prelude-personal-dir)
+(add-to-list 'load-path prelude-lisp-dir)
 ;;(prelude-add-subfolders-to-load-path prelude-vendor-dir)
 
 
@@ -72,6 +108,3 @@ by Prelude.")
 (require 'prelude-c)
 (require 'prelude-mac)
 (require 'prelude-org)
-
-
-
