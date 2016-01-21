@@ -78,3 +78,7 @@
 
 (depends-on "ssh")
 (depends-on "matlab-mode")
+
+(depends-on "w3m")
+
+
