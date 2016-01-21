@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Write Clean CSS using SASS"
+(("Responsive CSS with Sass and Compass"
+ (filename . "/Applications/MAMP/htdocs/Responsive CSS with Sass and Compass/")
+ (front-context-string)
+ (rear-context-string . "Jan 21 08:18 ..\n")
+ (position . 218))
+("Write Clean CSS using SASS"
  (filename . "/Applications/MAMP/htdocs/Write Clean CSS using SASS/")
  (front-context-string)
  (rear-context-string . "Jan 20 15:32 ..\n")
