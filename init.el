@@ -108,3 +108,7 @@ by Prelude.")
 (require 'prelude-c)
 (require 'prelude-mac)
 (require 'prelude-org)
+
+;; list
+(require 'prelude-lisp)
+         
